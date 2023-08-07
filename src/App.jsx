@@ -1,18 +1,16 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import LandingPage from "./paginas/LandingPage";
+import { BrowserRouter, Routes, Route, HashRouter } from "react-router-dom";
+import LandingPage from './paginas/LandingPage';
+import FormularioLogin from './paginas/FormularioLogin';
+import Dashboard from './layout/Dashboard';
 import Login from "./layout/Login";
-import FormularioLogin from "./paginas/FormularioLogin";
-import Dashboard from "./layout/Dashboard";
-import FundamentoUseState from "./paginas/FundamentoUseState";
 import FundamentoUseEffect from "./paginas/FundamentoUseEffect";
+import FundamentoUseState from "./paginas/FundamentoUseState";
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
-
-        <Route path="/" element={<LandingPage />}>
-        </Route>
+        <Route path='/' element={<LandingPage />}></Route>
 
         <Route path="/login" element={<Login />}>
           <Route index element={<FormularioLogin />} />
@@ -22,10 +20,8 @@ function App() {
           <Route path="usestate" element={<FundamentoUseState />} />
           <Route path="useffect" element={<FundamentoUseEffect />} />
         </Route>
-
       </Routes>
-    </BrowserRouter>
-
+    </HashRouter>
   )
 }
 export default App
