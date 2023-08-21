@@ -1,7 +1,9 @@
 import React from 'react'
 
-export default function Intro() {
+const Intro = () => {
   return (
-    <div>Intro al useEffect</div>
+    <div>Intro a useEffect</div>
   )
 }
+
+export default Intro

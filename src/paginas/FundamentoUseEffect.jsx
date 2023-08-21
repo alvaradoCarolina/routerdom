@@ -1,8 +1,11 @@
 import React from 'react'
 import Intro from '../components/effect/Intro'
 
-export default function FundamentoUseEffect() {
+
+const FundamentoUseEffect = () => {
   return (
-    <Intro />
+    <Intro/>
   )
 }
+
+export default FundamentoUseEffect

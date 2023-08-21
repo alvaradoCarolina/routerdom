@@ -1,8 +1,10 @@
 import React from 'react'
-import Intro from '../components/effect/Intro'
+import Intro from '../components/state/Intro'
 
-export default function FundamentoUseState() {
+const FundamentoUseState = () => {
   return (
-    <Intro />
+    <Intro/>
   )
 }
+
+export default FundamentoUseState
